@@ -89,7 +89,7 @@ nav ul {
 
 /* Hero Section */
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), transparent), url("./img/landing-page.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), transparent), url("./img/landing-page.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -212,6 +212,7 @@ nav ul {
 
 .card h4, .card p {
     padding: 1rem;
+    line-height: 1.8;
 
 }
 
