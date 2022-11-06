@@ -7,3 +7,109 @@
 html{
     font-size: 62.5%;
 }
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Global */
+h1 {
+    font-size: 2.6rem;
+}
+
+li, button, label, input, p {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 4.8rem;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+h4, h5 {
+    font-size: 2.8rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    padding: 2rem 6rem;
+    background-color: #4c6e97;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* Nav Section w/ HERO */
+.main-head {
+    background: #131c27;
+    color: white;
+}
+
+nav {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+    min-height: 10vh;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+#logo {
+    font-family: "Island Moments", cursive;
+    font-size: 4.5rem;
+    flex: 4 1 40rem;
+}
+
+/* Hero Section */
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), transparent), url("./img/landing-page.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 90vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h3 {
+    padding: 5rem;
+}
+
+/* Media Queries */
+@media screen and (max-width: 932px) {
+        nav {
+            text-align: center;
+        }
+        #logo {
+            padding: 1rem;
+        }
+}
+
+@media screen and (max-width: 672px) {
+    html {
+        font-size: 45%;
+    }
+}
