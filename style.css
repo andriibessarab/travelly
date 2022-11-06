@@ -222,21 +222,110 @@ nav ul {
     margin: 2rem;
 }
 
+/* Contact Section */
+#contact {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), transparent), url("./img/contact-mountain.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-wrapper {
+    background-color: rgba(19, 28, 39, 0.5);
+    width: 60%;
+    color: white;
+    border-radius: 20px 5px 20px 5px;
+    -moz-border-radius: 20px 5px 20px 5px;
+    -webkit-border-radius: 20px 5px 20px 5px;
+}
+
+.form-head {
+    text-align: center;
+    padding: 4rem;
+}
+
+.name-input, .email-input {
+    padding: 3rem;
+    text-align: center;
+}
+
+.form-wrapper label {
+    margin: 0 3rem;
+    width: 30%;
+}
+
+.form-wrapper input {
+    padding: 1rem 3rem;
+    width: 70%;
+}
+
+.form-wrapper button {
+    width: 100%;
+    padding: 2rem;
+    margin-top: 8rem;
+    border-radius: 0 0 20px 5px;
+    -moz-border-radius: 0 0 20px 5px;
+    -webkit-border-radius: 0 0 20px 5px;
+}
+
+/* Footer */
+footer {
+    color: white;
+    background-color: rgba(19, 28, 39, 1);
+}
+
+.footer-wrapper {
+    display: flex;
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    min-height: 10vh;
+}
+
+footer h5 {
+    flex: 5 1 40rem;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    flex: 1 1 40rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /* Media Queries */
 @media screen and (max-width: 932px) {
-        nav {
-            text-align: center;
-        }
-        #logo {
-            padding: 1rem;
-        }
-        .cloud {
-            height: 50rem;
-        }
+    nav {
+        text-align: center;
+    }
+    #logo {
+        padding: 1rem;
+    }
+    .cloud {
+        height: 50rem;
+    }
+    .form-wrapper {
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 672px) {
     html {
         font-size: 45%;
+    }
+    .card h4 {
+        font-size: 3.5rem;
+    }
+    .card p {
+        font-size: 2.4rem;
+    }
+    .form-wrapper {
+        width: 95%;
     }
 }
