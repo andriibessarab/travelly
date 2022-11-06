@@ -46,9 +46,14 @@ button {
     color: white;
     font-size: 1.8rem;
     cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
 }
 
-/* Nav Section w/ HERO */
+button:hover {
+    background-color: #304358;
+}
+
+/* Nav Section w/ Hero */
 .main-head {
     background: #131c27;
     color: white;
@@ -79,7 +84,6 @@ nav ul {
 }
 
 /* Hero Section */
-
 .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), transparent), url("./img/landing-page.jpg");
     background-repeat: no-repeat;
@@ -98,6 +102,76 @@ nav ul {
     padding: 5rem;
 }
 
+/* Locations Section */
+#locations {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), transparent), url("./img/new-york-page.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.locations-head {
+    width: 90%;
+    margin: auto;
+}
+
+.locations-head h2 {
+    padding: 1rem 0;
+    text-decoration: underline;
+    text-decoration-thickness: 0.5rem;
+}
+
+.locations-head h3 {
+    padding: 4rem 0;
+    background: linear-gradient(#131c27, #633b34);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cloud {
+    position: absolute;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+}
+
+.moving-cloud-1 {
+    animation: cloudAnimation1 4s infinite alternate ease-in-out;
+}
+
+.moving-cloud-2 {
+    top: 10%;
+    z-index: -1;
+    animation: cloudAnimation2 4s infinite alternate ease-in-out;
+}
+
+@keyframes cloudAnimation1 {
+    0% {
+        opacity: 0.6;
+        transform: translate(10%, -10%);
+    }
+
+    100%{
+        opacity: 0.9;
+        transform: translate(0%, 0%);
+    }
+}
+
+@keyframes cloudAnimation2 {
+    0% {
+        opacity: 0.3;
+    }
+
+    100%{
+        opacity: 1.0;
+    }
+}
+
 /* Media Queries */
 @media screen and (max-width: 932px) {
         nav {
@@ -105,6 +179,9 @@ nav ul {
         }
         #logo {
             padding: 1rem;
+        }
+        .cloud {
+            height: 50rem;
         }
 }
 
